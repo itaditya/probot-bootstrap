@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "GitHub App built with probot that bootstraps your repo with global settings",
+  "author": "Aditya Agarwal <adityaa803@gmail.com> (adi.surge.sh)",
+  "license": "ISC",
+  "repository": "https://github.com/itaditya/react-preview.git",
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "deploy": "git push heroku master"
+  },
+  "dependencies": {
+    "probot": "^6.0.0",
+    "probot-commands": "^1.0.1",
+    "probot-config": "^0.1.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
