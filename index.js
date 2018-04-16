@@ -1,4 +1,3 @@
-const express = require('express')
 const commands = require('probot-commands')
 
 const onboard = require('./lib/onboard')
@@ -34,5 +33,4 @@ module.exports = (robot) => {
     if (context.isBot) return
     provideHelp(context)
   })
-
 }
