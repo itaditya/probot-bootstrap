@@ -10,8 +10,12 @@ module.exports = (robot) => {
   const app = robot.route('/')
   app.use(require('express').static('public'))
 
+  robot.on('installation.created', context => {
+    onboard(context, {type: 1})
+  })
+
   robot.on('installation_repositories.added', context => {
-    onboard(context)
+    onboard(context, {type: 2})
   })
 
   commands(robot, 'check', async(context, command) => {

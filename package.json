@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
+    "probot": "probot",
     "lint": "standard --fix",
     "test": "jest && standard",
     "deploy": "git push heroku master"
