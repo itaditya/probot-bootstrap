@@ -9,7 +9,8 @@
     "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
     "probot": "probot",
-    "simulate:installation.created": "nodemon --exec \"probot simulate installation test/fixtures/installation.created.json ./index.js\"",
+    "simulate": "sh ./scripts/simulate.sh",
+    "simulate:watch": "sh ./scripts/simulate-watch.sh",
     "lint": "standard --fix",
     "test": "jest && standard",
     "deploy": "git push heroku master"
